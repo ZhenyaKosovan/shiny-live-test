@@ -15,7 +15,6 @@ jobs:
         uses: jitterbit/get-changed-files@v1
         with:
           format: csv
-          status: 'added,modified'
 
       - name: Create CSV of file changes
         run: echo "${{ steps.file_changes.outputs.added_modified_files }}" > file_changes.csv
