@@ -1,7 +1,5 @@
 # app.R
 
-library(readr)
-
 # Read the CSV file
 file_changes <- readLines('file_changes.csv')
 
